@@ -735,20 +735,7 @@ def plotts(tradingSystem, equity,mEquity,exposure,settings,DATE,statistics,retur
     f = plt.figure(figsize = (14,8))
     canvas = FigureCanvasTkAgg(f, master=TradingUI)
 
-    # canvas.show()
-    # canvas.get_tk_widget().grid(row=0, column=0)
 
-    # vbar=tk.Scrollbar(self, orient = VERTICAL)
-    # vbar.grid(row=0, column=1)       
-    # hbar=tk.Scrollbar(self, orient=HORIZONTAL)
-    # hbar.grid(row=1, column=0)
-
-    # print ("HELLO CHANGES")
-
-    # canvas.get_tk_widget().config(xscrollcommand=hbar.set, yscrollcommand = vbar.set)
-
-    # hbar.config(command=canvas.get_tk_widget().xview)
-    # vbar.config(command=canvas.get_tk_widget().yview)
 
 
     if updateCheck():
