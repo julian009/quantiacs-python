@@ -737,9 +737,9 @@ def plotts(tradingSystem, equity,mEquity,exposure,settings,DATE,statistics,retur
 
     canvas.get_tk_widget().grid(row=0, column=0)
 
-    vbar=tk.Scrollbar(self, orient = VERTICAL)
+    vbar=tk.Scrollbar(TradingUI, orient = VERTICAL)
     vbar.grid(row=0, column=1)       
-    hbar=tk.Scrollbar(self, orient=HORIZONTAL)
+    hbar=tk.Scrollbar(TradingUI, orient=HORIZONTAL)
     hbar.grid(row=1, column=0)
 
     print ("HELLO CHANGES")
