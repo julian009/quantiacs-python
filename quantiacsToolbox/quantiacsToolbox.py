@@ -732,22 +732,22 @@ def plotts(tradingSystem, equity,mEquity,exposure,settings,DATE,statistics,retur
     dropdown3.current(0)
     dropdown3.bind('<<ComboboxSelected>>',newselection3)
 
-    f = plt.figure(figsize = (14,8))
+    f = plt.figure(figsize = (10,6))
     canvas = FigureCanvasTkAgg(f, master=TradingUI)
 
-    canvas.get_tk_widget().grid(row=0, column=0)
+    # canvas.get_tk_widget().grid(row=0, column=0)
 
-    vbar=tk.Scrollbar(TradingUI, orient = tk.VERTICAL)
-    vbar.grid(row=0, column=1)       
-    hbar=tk.Scrollbar(TradingUI, orient=tk.HORIZONTAL)
-    hbar.grid(row=1, column=0)
+    # vbar=tk.Scrollbar(TradingUI, orient = tk.VERTICAL)
+    # vbar.grid(row=0, column=1)       
+    # hbar=tk.Scrollbar(TradingUI, orient=tk.HORIZONTAL)
+    # hbar.grid(row=1, column=0)
 
-    print ("HELLO CHANGES")
+    # print ("HELLO CHANGES")
 
-    canvas.get_tk_widget().config(xscrollcommand=hbar.set, yscrollcommand = vbar.set)
+    # canvas.get_tk_widget().config(xscrollcommand=hbar.set, yscrollcommand = vbar.set)
 
-    hbar.config(command=canvas.get_tk_widget().xview)
-    vbar.config(command=canvas.get_tk_widget().yview)
+    # hbar.config(command=canvas.get_tk_widget().xview)
+    # vbar.config(command=canvas.get_tk_widget().yview)
 
 
 
